@@ -1,0 +1,43 @@
+@import './_var.scss';
+.header_top_bg {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #fff;
+    background: $topColor;
+    a {
+        color: #fff;
+    }
+    .top_content {
+        button {
+            color: #fff;
+            text-transform: uppercase;
+            background: $topColor;
+            padding: .2rem 1rem;
+            border: 1px solid #fff;
+            margin: .5rem 0;
+            outline: none;
+            &:hover {
+                color: skyblue;
+                border: 1px solid skyblue;
+            }
+        }
+        svg {
+            margin-right: .5rem;
+        }
+        .header_top_block_link {
+            .header_top_link {
+                margin-right: 2rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .header_top_block_contact {
+            span {
+                font-weight: 600;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
