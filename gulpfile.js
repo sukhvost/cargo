@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts:lib', function() {
-    return gulp.src(['./node_modules/jquery/dist/jquery.js', './node_modules/popper.js/dist/popper.js', './node_modules/bootstrap/dist/js/bootstrap.js'])
+    return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/popper.js/dist/umd/popper.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js'])
         .pipe(concat('libs.js'))
         .pipe(gulp.dest('./build/js'))
         .on('end', server.stream)

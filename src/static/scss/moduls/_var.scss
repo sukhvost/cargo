@@ -1,8 +1,18 @@
 // var
 $topColor: #25333c;
+$decorColor: #b0b5b9;
+$roboto: 'Roboto Condensed';
+$osans: 'Open Sans';
+$upper: uppercase;
 // extends
 %logo {
     width: 3.4375rem;
     height: 3.4375rem;
+    border-radius: 50%;
+}
+
+%logoXS {
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
 }

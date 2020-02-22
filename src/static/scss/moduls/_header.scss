@@ -2,23 +2,28 @@
 .header_top_bg {
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 0.7rem;
-    color: #fff;
+    font-size: 0.75rem;
+    color: $decorColor;
     background: $topColor;
     a {
-        color: #fff;
+        color: $decorColor;
         &:hover {
             text-decoration: none;
             color: skyblue;
         }
     }
-    .top_content {
+    .header_top_block_link {
+        svg {
+            margin-right: .5rem;
+        }
+    }
+    .header_top_content {
         button {
-            color: #fff;
-            text-transform: uppercase;
+            color: $decorColor;
+            text-transform: $upper;
             background: $topColor;
             padding: .2rem 1.5rem;
-            border: 1px solid #fff;
+            border: 1px solid $decorColor;
             margin: .5rem 0;
             outline: none;
             &:hover {
@@ -26,37 +31,90 @@
                 border: 1px solid skyblue;
             }
         }
-        svg {
-            margin-right: .5rem;
+        @media (max-width: 1200px) {
+            .md_text_right {
+                text-align: end;
+            }
         }
-        .header_top_block_contact {
-            .header_top_contact {
-                display: inline-block;
+        .header_top_contact {
+            white-space: nowrap;
+            text-align: end;
+            svg {
+                margin-right: .5rem;
             }
             span {
                 font-weight: 600;
-                margin-right: 1rem;
             }
         }
+        @media (max-width: 1200px) {
+            .header_top_contact {
+                text-align: inherit;
+            }
+        }
+    }
+}
+
+.logo_img_china {
+    @extend %logo;
+    position: relative;
+    background: url('../img/flag-china.png') no-repeat left/cover;
+}
+
+.logo_img_ru {
+    @extend %logo;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    background: url('../img/flag-rus.png') no-repeat center/cover;
+}
+
+.logo_descr {
+    color: #fff;
+    line-height: 1rem;
+    padding: 1rem 0;
+    span {
+        display: block;
+        text-transform: $upper;
+    }
+    .logo {
+        font-family: $roboto;
+        font-size: 1.6875rem;
+        font-weight: 700;
+    }
+    .descr {
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 0.75rem;
+        white-space: nowrap;
     }
 }
 
 .header_main_bg {
     background: url('../img/bg-header.png') no-repeat top/contain;
     height: 46.25rem;
-    .header_main_content {
-        .logo_img_china {
-            @extend %logo;
-            position: relative;
-            background: url('../img/flag-china.png') no-repeat left/cover;
-        }
-        .logo_img_ru {
-            @extend %logo;
+    .header_decor {
+        position: relative;
+        &::before {
             position: absolute;
-            top: 0;
-            left: 4rem;
-            background: url('../img/flag-rus.png') no-repeat center/cover;
+            bottom: 0;
+            left: -1%;
+            display: block;
+            content: '';
+            width: 102%;
+            height: 1px;
+            background: $decorColor;
         }
-        .logo_descr {}
+        .nav {
+            padding-right: 0;
+            .link_menu {
+                font-family: $osans;
+                font-size: 0.8125rem;
+                color: #fff;
+                text-transform: $upper;
+            }
+            .drop_bg {
+                background: none;
+            }
+        }
     }
 }
