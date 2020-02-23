@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="" type=""/>
+    <title>First Cargo</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Melnikov Viktor"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/all.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid header_top_bg">
+        <div class="container header_top_content">
+          <div class="row align-items-center">
+            <div class="col-md-6 header_logo d-xl-none col-sm-8 col-xs">
+              <div class="row my-1 align-items-center">
+                <div class="col-auto mr-4">
+                  <div class="logo_img_china"></div>
+                  <div class="logo_img_ru"></div>
+                </div>
+                <div class="col">
+                  <div class="logo_descr"><span class="logo">1kargo.ru</span><span class="descr">Перевозки из Китая в Россию</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6 col-sm-4 col-xs">
+              <div class="row align-items-center">
+                <div class="col-xl-2 md_text_right">
+                  <button>Translate</button>
+                </div>
+                <div class="col-xl-3 d-none d-xl-block">
+                  <div class="header_top_block_link">
+                    <div class="block_link"><a class="header_top_link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                          <image id="Layer_5_copy" data-name="Layer 5 copy" width="21" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAB80lEQVQ4ja2UPWtVQRCGn/thRAlCBCF2ouCycVEs/ANKmiAoiNoJgoWlvYVNChHUX6CVlSBYCRprsVM8y9mzlRBBQcVC/MBL7j0ycTYux030gi8s7M6ZffedOTPTq+pm6KxZ4z/AhzgEhsNE5UM8BVwF3hTo+8BE9z1gBtjprDmud9eFqbi1Xtu2YrwCXAdeAF+AbUowUcJWydD9D+AYsN1ZM9tVkJTeBI46a15NkwQf4uOSPSl9CRwBamA2UzVWpT1VKMoHev4O7AEuOmselpSKwxngvYSktoESjTLbWO3y0FvgIPBAbb8hSqu6Wa3qZkn2066qbj5UdbOQ3+sru6jZN00+M4ycNXUp/BTalvAhngY+Al+1rKQKLnTvJNL+X8guA7eAG8BZYLfUo9577UN8Alxz1ix3lW5GuBe4rWVnnTWHCj6X9PuyNEJS2G7Be0fXI+CcD/FpwWeHKC6FPyk446xZ8iFKDvcD95015wtuB3QJJn+En/q4sz+hSld8iKvS91l074AFaQI9z+Skg+4Dmdrn8nN8iLucNZ87Ig6n9tYpNUqk41IFdEdil1DxTFt7wz8RzQP3SkT/gG8+RAl/A0npCvDJh3hSE75ZKvLelznhgLluR61PKc3HXWBRXs4iSBWRV0f6JpNqTmtXHvgF4CeihOQuxBaengAAAABJRU5ErkJggg=="></image>
+                        </svg>Рассчитать доставку груза из Китая</a></div>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-none d-xl-block">
+                  <div class="header_top_block_link">
+                    <div class="block_link"><a class="header_top_link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+                          <image id="иконка_copy" data-name="иконка copy" width="16" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAB2ElEQVQ4jZWUO2hVQRCGv3tyLSJR8IUJ+AALl4EJoihYJKggaGMXxc7KWrC0FjtbixSKldhZppEgIhpQLLK4GR+oqEQRBJ9BNDky17mwBIlk4DDL2dl///lnZjtt25KL3Qca4CvQ5a8tAmuA30AHaIGB+L8VeKiSznRmn8wZsB64EpsLwI4Ifg3sBR4Be4BXAeagF4Apv21IJY2wSsvFJp2FA7zPxQ4Bp4EDgINdBZ4Dl1XS5lzsh0pam4s9Bj4Ey0vAfDcofQx6g8Bn4CXgqT0LXm/CP431QsQONAHQRP5Ntf6XtZH/Uvi2qYIWY4PKd8JvCL8F2AV8j2otNYHaDdWpSrYx2LhN5WIXgRsq6RRwombQxI39db/uP4F7uZgLehA4DpzLxUwljQPbPX55Cr/CH1FJt4HDwEmVtFsl7VdJo94judiESrrpQnbj0CZAolm8jJ8CdFglravFVEmDuVjJxcaAFw4wopKmgek6MBc7W5VvuU1GJ951gG+52DvgPLAT+BICjq5QTtfklmvQH6YHkYqr74J6SkeBOz4PKulYxUyBWQdRSTM9gJUsF3PgeeCaV8EHTyU1uZh378R/AQLkOrANeBti+zzs602qA6z28yegd6Zt+QMbhtUdTc0ADwAAAABJRU5ErkJggg=="></image>
+                        </svg>Проследить посылку из Китая</a></div>
+                  </div>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block">
+                  <div class="header_top_contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+                      <image width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAACE0lEQVQokWNUNbZhgIBd/FMPPZNTqUh4636M4RkDEYAJrMRuV/qq3T+2q91k7GMobt1+VpTBg0jNO50W1L4LFWuK2O2aGu8auNHy4Nu+jOZdDAzKhDWHswZI3Z7D4XD4Wz1I4Nsip7zGd8FvGGvlFxPWfP7fG0ZBZSZkwaNTWQ//t05mus7AYIxf8y2mc+9EDH/sYGCIAAnolOybsXPinXCWae2HNBkYzhLws9OWja+Vv7NEMgQzMBzO6HU/pSadlRLntOl7GWFnMzAwLOtjO/Y/rEL6MMPhXYd/Gf98YchRQUgjXDPDGfvWCa+cP34vnzW/pZV925eMaaoHTBiqkBWazjsse6tZRRlTMwMDw9Z0pq77zpNZ9ki5mcesU9zxq2F64GErhjywpP7hjFbZp/MvGkxbtHNCyMVb2gwqYHFQCoPj3H+5V9/eOvG0wK3RpPF/6oW370882DRp9/rX37c/bHVZrmr8ny1mza8Z9x8dPvcuzCYAKXlCgdPhxHUVL5P5l6ddd362sTou9HdT3Ks64X9VR2LdGBh+gJRwxe2btN55nRMLRijss50f9HbPnYmtK+t33Z26ibltRarzPYbLyEq+vWX8xMjK/AvTZjjYzW5Vx9xdZ/PRjPnO7l/8Z891M849sdvF73Ds/Jx78UJV8dvwaIaBXezGfZwRtWo/PbgZvon+/3CBh21e3UyHfQzzAdvA1d5mk3IFAAAAAElFTkSuQmCC"></image>
+                    </svg><span>8 800 700 00 42</span>
+                  </div>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block">
+                  <div class="header_top_contact">                       
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="11" viewBox="0 0 17 11">
+                      <image width="17" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAABgUlEQVQokWNUNbZhEEk5ELAw9KMu569frEyMjP8ZiAWP1jL8yVrez6hq/F2nZeX/Vaafjgiz8SgtYuTl+UaMEXc/CShLifw0Zdnu/ZiFgeGfmJjgh89MP23v/WI8G8w1sXmK7e6vfbi1H+TznPx7QYH4JcOXH3QfSzAysDJBJL4zsMa5HkvcZzX9TenasF1tHqevMDDwoWsXjDocsWjnrx2Fv2YqKDYWuS59+x/sdSYGBkQQPJtl1x2Yw5mwWab45dMVHRcOu3IXQWT28HtO3rNuRcDpdtlFUfvcilcbqV1luAPTx4Lh2lv2NybHMfisTTtUOhXkKv+LkR/VfjLyX17ApNC42hVZM25DkF11d8+iznKrQNv1MZ+spj9chkstyBBGnGG41+Vl+V6GGTjloYAJnxnEAhYGBqZrzz9L/VeYPzl6t4CIEyma/3L/YWc8w/AGnGIZ7HeIr6v8JiH87y/DPwYGxr9//jD++/ePgZWV9b+0uORPnKacbGRQy95zHQD5SZPNBQqCOgAAAABJRU5ErkJggg=="></image>
+                    </svg><span>88007000042@1cargo.ru</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid header_main_bg">
+        <div class="filter_bg">
+          <div class="header_decor">
+            <div class="container header_main_content">
+              <div class="row">
+                <div class="col-xl-4 header_logo d-none d-xl-block">
+                  <div class="row my-1 align-items-center">
+                    <div class="col-auto mr-4">
+                      <div class="logo_img_china"></div>
+                      <div class="logo_img_ru"></div>
+                    </div>
+                    <div class="col">
+                      <div class="logo_descr"><span class="logo">1kargo.ru</span><span class="descr">Перевозки из Китая в Россию</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-8 nav header_nav justify-content-xl-end col-md-12 d-none d-sm-block">
+                  <nav class="navbar navbar-expand nav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown ml-1"><a class="nav-link dropdown-toggle active link_menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Главная</a>
+                        <div class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </li>
+                      <li class="nav-item dropdown ml-1"><a class="nav-link dropdown-toggle active link_menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Доставка</a>
+                        <div class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </li>
+                      <li class="nav-item dropdown ml-1"><a class="nav-link dropdown-toggle active link_menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги в Китае</a>
+                        <div class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </li>
+                      <li class="nav-item dropdown ml-1"><a class="nav-link dropdown-toggle active link_menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Инфо</a>
+                        <div class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </li>
+                      <li class="nav-item dropdown ml-1"><a class="nav-link dropdown-toggle active link_menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Новости</a>
+                        <div class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </li>
+                      <li class="nav-item dropdown ml-1"><a class="nav-link dropdown-toggle active link_menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Контакты</a>
+                        <div class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12">
+                <h1 class="text-center description">Перевозки из Китая в Россию!</h1>
+              </div>
+            </div>
+            <div class="block_form">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                  <h5>Оставьте заявку<span>На расчет стоимости доставки</span></h5>
+                  <div class="form_bg">
+                    <form action="/">
+                      <div class="form-group text-center">
+                        <input class="form-control" type="text" name="name" placeholder="Ваше имя..."/>
+                        <input class="form-control" type="tel" name="phone_number" placeholder="Ваш телефон..."/>
+                        <input class="form-control" type="email" name="email" placeholder="Ваш e-mail..."/>
+                        <textarea class="form-control" name="message" cols="30" rows="1.5" placeholder="Сообщение..."></textarea>
+                        <button class="btn btn-danger">Отправить заявку</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8">
+                  <video autoplay="autoplay" controls="controls" loop="loop">
+                    <source src="./video/ali.mp4"/>
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> 
+    <script src="./js/libs.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
