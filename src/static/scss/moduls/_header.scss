@@ -90,7 +90,7 @@
 }
 
 .header_main_bg {
-    height: 46.25rem;
+    padding-bottom: 5%;
     position: relative;
     &::before {
         position: absolute;
@@ -100,7 +100,7 @@
         content: '';
         width: 100%;
         height: 100%;
-        background: url('../img/bg-header.png') no-repeat top/contain;
+        background: url('../img/bg-header.png') no-repeat top/cover;
         filter: brightness(.8);
     }
     .header_decor {
@@ -108,10 +108,11 @@
         &::before {
             position: absolute;
             bottom: 0;
-            left: -1%;
+            left: 0;
+            right: 0;
             display: block;
             content: '';
-            width: 102%;
+            width: 100%;
             height: 1px;
             background: $decorColor;
         }
@@ -165,27 +166,69 @@
             color: #fff;
             text-transform: $upper;
         }
+        @media (max-width: 992px) {
+            span {
+                display: none;
+            }
+        }
     }
     .form_bg {
         background: rgba($color: $decorColor, $alpha: .7);
-        padding: .3rem 0;
+        padding: .7rem 0;
         input {
             width: 90%;
-            margin: .3rem auto;
+            height: 3rem;
+            margin: .7rem auto;
             border: none;
-            padding: .3rem 1rem;
             font-size: 0.875rem;
         }
         textarea {
             width: 90%;
+            height: 3.4rem;
             margin: .3rem auto;
             border: none;
-            padding: .5rem 1rem .8rem;
             font-size: 0.875rem;
         }
         button {
             text-transform: $upper;
-            margin-top: .5rem;
+            margin-top: 1rem;
         }
+        @media (max-width: 1200px) {
+            input {
+                height: 2rem;
+            }
+            textarea {
+                height: 2.2rem;
+            }
+        }
+        @media (max-width: 992px) {
+            input {
+                margin: .4rem auto;
+            }
+            textarea {
+                margin: 0 auto;
+                height: 2rem;
+            }
+            button {
+                width: 90%;
+                margin: .2rem auto 0;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .form_bg {
+            padding: .05rem 0;
+        }
+    }
+}
+
+video {
+    width: inherit;
+    outline: none;
+}
+
+@media (max-width: 992px) {
+    video {
+        height: 266.344px;
     }
 }
