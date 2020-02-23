@@ -1,9 +1,9 @@
-header
+header.header
     .container-fluid.header_top_bg
         .container.header_top_content
             .row.align-items-center
                 .col-md-6.header_logo.d-xl-none
-                    .row
+                    .row.my-1.align-items-center
                         .col-auto.mr-4
                             .logo_img_china
                             .logo_img_ru
@@ -40,30 +40,50 @@ header
                                     image(width="17" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAABgUlEQVQokWNUNbZhEEk5ELAw9KMu569frEyMjP8ZiAWP1jL8yVrez6hq/F2nZeX/Vaafjgiz8SgtYuTl+UaMEXc/CShLifw0Zdnu/ZiFgeGfmJjgh89MP23v/WI8G8w1sXmK7e6vfbi1H+TznPx7QYH4JcOXH3QfSzAysDJBJL4zsMa5HkvcZzX9TenasF1tHqevMDDwoWsXjDocsWjnrx2Fv2YqKDYWuS59+x/sdSYGBkQQPJtl1x2Yw5mwWab45dMVHRcOu3IXQWT28HtO3rNuRcDpdtlFUfvcilcbqV1luAPTx4Lh2lv2NybHMfisTTtUOhXkKv+LkR/VfjLyX17ApNC42hVZM25DkF11d8+iznKrQNv1MZ+spj9chkstyBBGnGG41+Vl+V6GGTjloYAJnxnEAhYGBqZrzz9L/VeYPzl6t4CIEyma/3L/YWc8w/AGnGIZ7HeIr6v8JiH87y/DPwYGxr9//jD++/ePgZWV9b+0uORPnKacbGRQy95zHQD5SZPNBQqCOgAAAABJRU5ErkJggg==")
                                 span 88007000042@1cargo.ru
     .container-fluid.header_main_bg
-        .header_decor
-            .container.header_main_content
+        .filter_bg
+            .header_decor
+                .container.header_main_content
+                    .row
+                        .col-xl-4.header_logo.d-none.d-xl-block
+                            .row.my-1.align-items-center
+                                .col-auto.mr-4
+                                    .logo_img_china
+                                    .logo_img_ru
+                                .col
+                                    .logo_descr
+                                        span.logo 1kargo.ru
+                                        span.descr Перевозки из Китая в Россию
+                        .col-xl-8.nav.header_nav.justify-content-xl-end
+                            nav.navbar.navbar-expand.nav
+                                ul.navbar-nav
+                                    -var menuItem = [{item: 'Главная'}, {item: 'Доставка'}, {item: 'Услуги в Китае'}, {item: 'Инфо'}, {item: 'Новости'}, {item: 'Контакты'}];
+                                    each link in menuItem 
+                                        li.nav-item.dropdown.ml-1
+                                            a(href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle.active.link_menu=link.item
+                                            div(aria-labelledby="navbarDropdownMenuLink").dropdown-menu.drop_bg
+                                                a(href="#").dropdown-item Action
+                                                a(href="#").dropdown-item Another action
+                                                a(href="#").dropdown-item Something else here
+            .container
                 .row
-                    .col-xl-4.header_logo.d-none.d-xl-block
-                        .row
-                            .col-auto.mr-4
-                                .logo_img_china
-                                .logo_img_ru
-                            .col
-                                .logo_descr
-                                    span.logo 1kargo.ru
-                                    span.descr Перевозки из Китая в Россию
-                    .col-xl-8.nav.header_nav.justify-content-xl-end
-                        nav.navbar.navbar-expand.nav
-                            ul.navbar-nav
-                                -var menuItem = [{item: 'Главная'}, {item: 'Доставка'}, {item: 'Услуги в Китае'}, {item: 'Инфо'}, {item: 'Новости'}, {item: 'Контакты'}];
-                                each link in menuItem 
-                                    li.nav-item.dropdown
-                                        a(href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle.active.link_menu=link.item
-                                        div(aria-labelledby="navbarDropdownMenuLink").dropdown-menu.drop_bg
-                                            a(href="#").dropdown-item Action
-                                            a(href="#").dropdown-item Another action
-                                            a(href="#").dropdown-item Something else here
-    
+                    .col-xl-12
+                        h1.text-center.description Перевозки из Китая в Россию!
+                .block_form
+                    .row
+                        .col-xl-4
+                            h5 Оставьте заявку
+                                span На расчет стоимости доставки
+                            .form_bg
+                                form(action="/")
+                                    .form-group.text-center
+                                        input(type="text" name="name" placeholder="Ваше имя...").form-control
+                                        input(type="tel" name="phone_number" placeholder="Ваш телефон...").form-control
+                                        input(type="email" name="email" placeholder="Ваш e-mail...").form-control
+                                        textarea(name="message" cols="30" rows="1.5" placeholder='Сообщение...').form-control
+                                        button.btn.btn-danger Отправить заявку
+                            .col-xl-8
+                                video(autoplay controls loop)
+                                    source(src="", type="")
             
                            
 

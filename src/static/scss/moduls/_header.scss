@@ -90,8 +90,19 @@
 }
 
 .header_main_bg {
-    background: url('../img/bg-header.png') no-repeat top/contain;
     height: 46.25rem;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url('../img/bg-header.png') no-repeat top/contain;
+        filter: brightness(.8);
+    }
     .header_decor {
         position: relative;
         &::before {
@@ -115,6 +126,66 @@
             .drop_bg {
                 background: none;
             }
+        }
+    }
+}
+
+.description {
+    font-family: $osans;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: $upper;
+    padding: 2rem 0;
+}
+
+@media (max-width:1200px) {
+    .description {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+}
+
+.block_form {
+    h5 {
+        font-family: $osans;
+        font-size: 1.1875rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        text-transform: $upper;
+        background: $topColor;
+        padding: 1rem 0;
+        margin-bottom: 0;
+        span {
+            display: block;
+            font-family: $osans;
+            font-size: .875rem;
+            font-weight: 400;
+            color: #fff;
+            text-transform: $upper;
+        }
+    }
+    .form_bg {
+        background: rgba($color: $decorColor, $alpha: .7);
+        padding: .3rem 0;
+        input {
+            width: 90%;
+            margin: .3rem auto;
+            border: none;
+            padding: .3rem 1rem;
+            font-size: 0.875rem;
+        }
+        textarea {
+            width: 90%;
+            margin: .3rem auto;
+            border: none;
+            padding: .5rem 1rem .8rem;
+            font-size: 0.875rem;
+        }
+        button {
+            text-transform: $upper;
+            margin-top: .5rem;
         }
     }
 }
