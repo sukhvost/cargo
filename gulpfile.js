@@ -43,13 +43,13 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('img:build', function() {
-    return gulp.src('./src/static/img/**/*.{png,jpeg,gif}')
+    return gulp.src('./src/static/img/**/*.{png,jpeg,gif,svg}')
         .pipe(tinypng('NhNQfC355SWT4XKkMmxC9yp5rTqcqWjg'))
         .pipe(gulp.dest('./build/img'));
 });
 
 gulp.task('img:dev', function() {
-    return gulp.src('./src/static/img/**/*.{png,jpeg,gif}')
+    return gulp.src('./src/static/img/**/*.{png,jpeg,gif,svg}')
         .pipe(gulp.dest('./build/img/'));
 });
 

@@ -90,7 +90,6 @@
 }
 
 .header_main_bg {
-    padding-bottom: 5%;
     position: relative;
     &::before {
         position: absolute;
@@ -127,7 +126,7 @@
             }
         }
         .nav {
-            padding-right: 0;
+            padding: .6rem 0;
             .link_menu {
                 font-family: $osans;
                 font-size: 0.8125rem;
@@ -210,7 +209,7 @@
         }
     }
     .form_bg {
-        background: rgba($color: $decorColor, $alpha: .7);
+        background: rgba($color: $decorColor, $alpha: .2);
         padding: .7rem 0;
         input {
             width: 90%;
@@ -267,5 +266,54 @@ video {
 @media (max-width: 992px) {
     video {
         height: 100%;
+    }
+}
+
+.arrow_dawn {
+    margin: 1rem 0 2rem;
+    button {
+        background: none;
+        border: none;
+    }
+    button:active,
+    button:focus {
+        outline: none;
+    }
+    .arrow {
+        width: 1.3rem;
+        height: 1.3rem;
+        border-right: 2px solid $decorColor;
+        border-bottom: 2px solid $decorColor;
+    }
+    .dawn {
+        transform: rotate(45deg);
+        &:hover {
+            transform: scale(1.5) rotate(45deg);
+        }
+    }
+}
+
+.section_offers {
+    display: none;
+}
+
+.our_offers_bg {
+    background: rgba($color: $decorColor, $alpha: .2);
+    padding: 2.375rem 0;
+    img {
+        width: 20%;
+    }
+    h5 {
+        font-family: $osans;
+        font-weight: bold;
+        font-size: 0.875rem;
+        color: $redColor;
+        margin: 1rem 0 .5rem;
+    }
+    p {
+        color: $topColor;
+        font-family: $osans;
+        font-weight: 400;
+        font-size: .75rem;
     }
 }
