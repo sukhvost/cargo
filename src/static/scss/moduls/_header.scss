@@ -317,3 +317,47 @@ video {
         font-size: .75rem;
     }
 }
+
+.section_calc {
+    h4 {
+        font-family: $osans;
+        font-weight: normal;
+        font-size: 1.875rem;
+        padding: 2.625rem 0 1rem;
+    }
+    .border_calc {
+        padding: 4rem 1rem;
+        border: 1px solid $redColor;
+        position: relative;
+    }
+    .svg_wrap {
+        width: fit-content;
+        background: #fff;
+        margin: 0 auto;
+        padding: 1rem;
+        border: 1px solid $redColor;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #fff;
+        position: absolute;
+        top: -20%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    #Calculator {
+        fill: $redColor;
+    }
+    .form_calc {
+        label,
+        select {
+            display: block;
+            width: 100%;
+        }
+        select {
+            height: 3rem;
+            outline: none;
+            font-size: 0.875rem;
+            color: $decorColor;
+            border: 1px solid $decorColor;
+        }
+    }
+}
