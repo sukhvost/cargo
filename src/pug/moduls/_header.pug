@@ -146,6 +146,26 @@ section.section.section_calc
                                 option Авиа 7-10 дней
                                 option ЖД 15-20 дней
                                 option Морем 30-40 дней
+                    .row
+                        .col-xl-12.col-lg-12.col-md-12.text-center
+                            h5.descr_data Ввод данных
+                    .row
+                        .col-xl-12.col-lg-12.col-md-12.form_data
+                            label Габариты груза (см): 
+                            input(type="number", name="data_cargo" id="width_cargo").input_dimensions
+                            span x
+                            input(type="number", name="data_cargo" id="height_cargo").input_dimensions
+                            span x
+                            input(type="number", name="data_cargo" id="length_cargo").input_dimensions
+                            label(for="weight_cargo") Вес: 
+                            input(type="number", name="weight_cargo" id="weight_cargo")
+                            label(for="volume_cargo") Объем: 
+                            input(type="number", name="volume_cargo" id="volume_cargo")
+                    .row.submint_calc
+                        .col-xl-12.col-lg-12.col-md-12
+                            button.btn.btn-danger Рассчитать
+
+
 
                         
 

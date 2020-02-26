@@ -339,9 +339,19 @@ video {
         border-radius: 50%;
         box-shadow: 0 0 0 10px #fff;
         position: absolute;
-        top: -20%;
+        top: -12%;
         right: 50%;
         transform: translateX(50%);
+    }
+    .submint_calc {
+        position: absolute;
+        bottom: -5%;
+        right: 0;
+        left: 0;
+        button {
+            text-transform: $upper;
+            box-shadow: 0 0 0 10px #fff;
+        }
     }
     #Calculator {
         fill: $redColor;
@@ -352,11 +362,45 @@ video {
             display: block;
             width: 100%;
         }
+        label {
+            font-size: 1rem;
+            font-weight: bold;
+        }
         select {
             height: 3rem;
             outline: none;
             font-size: 0.875rem;
             color: $decorColor;
+            border: 1px solid $decorColor;
+        }
+    }
+    .descr_data {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+    .form_data {
+        font-family: $osans;
+        font-size: 0.875rem;
+        span {
+            padding: 0 .3rem 0 .5rem;
+            font-size: 1rem;
+        }
+        label {
+            padding-right: .3rem;
+            padding-left: .8rem;
+            &:first-of-type {
+                padding-left: 0;
+            }
+        }
+        .input_dimensions {
+            width: 7%;
+        }
+        input {
+            font-size: 2rem;
+            width: 10%;
+            height: 3rem;
+            outline: none;
             border: 1px solid $decorColor;
         }
     }
