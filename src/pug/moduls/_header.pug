@@ -56,7 +56,7 @@ header.header
                         .col-xl-8.nav.header_nav.col-md-12.d-none.d-sm-block
                             nav.navbar.navbar-expand.nav
                                 ul.navbar-nav.ml-xl-auto
-                                    -var menuItem = [{item: 'Главная'}, {item: 'Доставка'}, {item: 'Услуги в Китае'}, {item: 'Инфо'}, {item: 'Новости'}, {item: 'Контакты'}];
+                                    -let menuItem = [{item: 'Главная'}, {item: 'Доставка'}, {item: 'Услуги в Китае'}, {item: 'Инфо'}, {item: 'Новости'}, {item: 'Контакты'}];
                                     each link in menuItem 
                                         li.nav-item.dropdown.ml-1
                                             a(href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle.active.link_menu=link.item
@@ -91,7 +91,7 @@ section.section.section_offers
     .container-fluid.our_offers_bg
         .container
             .row.our_offers
-                -var offers = [{img:'./img/map.svg', h5: 'Находимся в Китае', p: 'Это позволяет вести переговоры с поставщиками лично при встрече, а не по телефону'}, {img:'./img/contract.svg', h5: 'Без посредников', p: 'Это положительно влияет на стоимость товара и скорость оформления товара'}, {img:'./img/gift.svg', h5: 'Система скидок', p: 'У нас существует система скидок для постоянных клиентов, которые приятно удивят Вас'}, {img:'./img/plane.svg', h5: 'Свой чартер', p: 'Это гарантия того, что Ваш товар не "потеряется" и быстро будет доставлен Вам'}]
+                -let offers = [{img:'./img/map.svg', h5: 'Находимся в Китае', p: 'Это позволяет вести переговоры с поставщиками лично при встрече, а не по телефону'}, {img:'./img/contract.svg', h5: 'Без посредников', p: 'Это положительно влияет на стоимость товара и скорость оформления товара'}, {img:'./img/gift.svg', h5: 'Система скидок', p: 'У нас существует система скидок для постоянных клиентов, которые приятно удивят Вас'}, {img:'./img/plane.svg', h5: 'Свой чартер', p: 'Это гарантия того, что Ваш товар не "потеряется" и быстро будет доставлен Вам'}]
                 each item in offers
                     .col-xl-3.col-lg-3.col-md-3.text-center
                         img(src=item.img alt="")
@@ -150,16 +150,19 @@ section.section.section_calc
                         .col-xl-12.col-lg-12.col-md-12.text-center
                             h5.descr_data Ввод данных
                     .row
-                        .col-xl-12.col-lg-12.col-md-12.form_data
-                            label Габариты груза (см): 
+                        .col-xl-3.col-lg-3.col-md-3.form_data
+                            span Габариты груза (см): 
+                        .col-xl-3.col-lg-3.col-md-3.input_data
                             input(type="number", name="data_cargo" id="width_cargo").input_dimensions
                             span x
                             input(type="number", name="data_cargo" id="height_cargo").input_dimensions
                             span x
                             input(type="number", name="data_cargo" id="length_cargo").input_dimensions
-                            label(for="weight_cargo") Вес: 
+                        .col-xl-3.col-lg-3.col-md-3.input_data_2
+                            span Вес: 
                             input(type="number", name="weight_cargo" id="weight_cargo")
-                            label(for="volume_cargo") Объем: 
+                        .col-xl-3.col-lg-3.col-md-3.input_data_2
+                            span Объем: 
                             input(type="number", name="volume_cargo" id="volume_cargo")
                     .row.submint_calc
                         .col-xl-12.col-lg-12.col-md-12
