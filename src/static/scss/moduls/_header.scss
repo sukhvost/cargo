@@ -293,8 +293,12 @@
         }
     }
     
-    .section_offers {
+    .js_section_offers_none {
         display: none;
+    }
+    
+    .js_section_offers_block {
+        display: block;
     }
     
     .our_offers_bg {
