@@ -1,0 +1,28 @@
+.js_section_offers_none {
+    display: none;
+}
+
+.js_section_offers_block {
+    display: block;
+}
+
+.our_offers_bg {
+    background: rgba($color: $decorColor, $alpha: .2);
+    padding: 2.375rem 0;
+    img {
+        width: 20%;
+    }
+    h5 {
+        font-family: $osans;
+        font-weight: bold;
+        font-size: 0.875rem;
+        color: $redColor;
+        margin: 1rem 0 .5rem;
+    }
+    p {
+        color: $topColor;
+        font-family: $osans;
+        font-weight: 400;
+        font-size: .75rem;
+    }
+}

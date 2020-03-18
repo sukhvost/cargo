@@ -1,0 +1,14 @@
+.section_hot_sale {
+    background: rgba($color: $decorColor, $alpha: .2);
+    padding: 2.375rem 0;
+    h3 {
+        font-size: 1.875rem;
+    }
+    p {
+        font-size: 1.1875rem;
+        font-weight: 200;
+    }
+    .upper {
+        text-transform: uppercase;
+    }
+}
