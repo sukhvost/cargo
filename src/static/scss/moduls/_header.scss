@@ -218,6 +218,10 @@
                 border: none;
                 font-size: 0.875rem;
             }
+            .error {
+                border: 1px solid red;
+                box-shadow: 0 0 3px 1px red;
+            }
             textarea {
                 width: 90%;
                 height: 3.4rem;
