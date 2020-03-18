@@ -9,8 +9,7 @@
         background: $topColor;
         padding: 1rem 0;
         margin-bottom: 0;
-        span {
-            display: block;
+        p {
             font-family: $osans;
             font-size: .875rem;
             font-weight: 400;
@@ -18,19 +17,50 @@
             text-transform: $upper;
         }
         @media (max-width: 992px) {
-            span {
+            p {
                 display: none;
             }
         }
     }
-    .form_bg {
+    @media (max-width: 992px) {
+        h5 {
+            font-size: 0.875rem;
+        }
+    }
+    .form_bg_header {
         background: rgba($color: $decorColor, $alpha: .2);
+    }
+    .form_bg_price {
+        background: #fff;
+        .svg_block {
+            text-align: center;
+            margin: .5rem 0;
+            svg{
+                fill: $redColor;
+            }
+        }
+        h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+            span {
+                text-transform: none;
+                display: block;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $redColor;
+                text-align: center;
+            }
+        }
+    }
+    .form_bg {
         padding: .7rem 0;
         input {
             width: 90%;
             height: 3rem;
             margin: .7rem auto;
-            border: none;
+            border: 1px solid $decorColor;
             font-size: 0.875rem;
         }
         .error {
@@ -41,12 +71,21 @@
             width: 90%;
             height: 3.4rem;
             margin: .3rem auto;
-            border: none;
+            border: 1px solid $decorColor;
             font-size: 0.875rem;
         }
         button {
             text-transform: $upper;
             margin-top: 1rem;
+        }
+        p {
+            font-size: 0.8125rem;
+            color: $topColor;
+            margin-top: 1rem;
+            span {
+                display: block;
+                color: $decorColor;
+            }
         }
         @media (max-width: 1200px) {
             input {
